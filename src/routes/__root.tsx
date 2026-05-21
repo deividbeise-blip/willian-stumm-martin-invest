@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Willian Stumm Martin Gestor Financeiro" },
+      { name: "description", content: "Digital Persona Prime crafts an ultra-premium, cinematic digital experience for a male personal brand." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Willian Stumm Martin Gestor Financeiro" },
+      { property: "og:description", content: "Digital Persona Prime crafts an ultra-premium, cinematic digital experience for a male personal brand." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Willian Stumm Martin Gestor Financeiro" },
+      { name: "twitter:description", content: "Digital Persona Prime crafts an ultra-premium, cinematic digital experience for a male personal brand." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/14ee82fe-4dc6-485d-973d-2df188a8df8e/id-preview-2c1a326b--5402db09-f7dd-450d-9604-a55e75f8ce82.lovable.app-1779324400191.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/14ee82fe-4dc6-485d-973d-2df188a8df8e/id-preview-2c1a326b--5402db09-f7dd-450d-9604-a55e75f8ce82.lovable.app-1779324400191.png" },
     ],
     links: [
       {
