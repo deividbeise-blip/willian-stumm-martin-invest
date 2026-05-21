@@ -75,7 +75,7 @@ export function Hero() {
           className="font-display text-6xl md:text-8xl lg:text-[10rem] font-bold leading-[0.9] text-balance gradient-text text-glow"
         >
           WILLIAN<br />
-          <span className="italic font-light">MARTIN</span> STUMM
+          <span className="italic font-light">STUMM</span> MARTIN
         </motion.h1>
 
         <motion.div
