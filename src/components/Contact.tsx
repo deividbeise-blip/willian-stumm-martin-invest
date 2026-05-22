@@ -63,7 +63,7 @@ export function Footer() {
   return (
     <footer className="relative border-t border-border/40 py-10 px-6 md:px-12">
       <div className="mx-auto max-w-7xl flex flex-col md:flex-row items-center justify-between gap-4 font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
-        <div>© 2026 Willian Martin Stumm</div>
+        <div>© 2026 Willian Stumm Martin</div>
         <div className="text-neon/60">SYSTEM · ONLINE · 24/7</div>
         <div>CNPJ · Brasil</div>
       </div>

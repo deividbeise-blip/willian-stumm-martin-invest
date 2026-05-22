@@ -21,7 +21,7 @@ export function About() {
             <div className="absolute -top-px -right-px w-8 h-8 border-t-2 border-r-2 border-neon z-20" />
             <div className="absolute -bottom-px -left-px w-8 h-8 border-b-2 border-l-2 border-neon z-20" />
             <div className="absolute -bottom-px -right-px w-8 h-8 border-b-2 border-r-2 border-neon z-20" />
-            <img src={portrait} alt="Willian Martin Stumm" className="h-full w-full object-cover" style={{ filter: "grayscale(0.3) contrast(1.1) brightness(0.85)" }} />
+            <img src={portrait} alt="Willian Stumm Martin" className="h-full w-full object-cover" style={{ filter: "grayscale(0.3) contrast(1.1) brightness(0.85)" }} />
             <div className="absolute inset-0 bg-gradient-to-tr from-background/80 via-transparent to-deep/40 mix-blend-multiply" />
             <div className="absolute inset-0 scan-lines opacity-20" />
             <div className="absolute bottom-4 left-4 font-mono text-[10px] tracking-[0.3em] text-neon">
@@ -47,7 +47,7 @@ export function About() {
           </h2>
 
           <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-            Sou Willian Martin Stumm — gestor financeiro social e empresarial. Trabalho com quem entende que dinheiro mal administrado é o silêncio antes do colapso, e quem busca clareza, método e crescimento real.
+            Sou Willian Stumm Martin — gestor financeiro social e empresarial. Trabalho com quem entende que dinheiro mal administrado é o silêncio antes do colapso, e quem busca clareza, método e crescimento real.
           </p>
 
           <div className="grid grid-cols-3 gap-px bg-border/40">
