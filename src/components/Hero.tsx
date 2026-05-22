@@ -35,27 +35,8 @@ export function Hero() {
       <div className="absolute inset-0 bg-noise opacity-[0.08] mix-blend-overlay" />
       <div className="absolute inset-0 scan-lines opacity-30 pointer-events-none" />
 
-      {/* Scan line */}
-      <div className="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-neon to-transparent animate-scan opacity-60 shadow-glow" />
-
       <Particles count={50} />
 
-      {/* HUD corners */}
-      <div className="absolute top-24 left-6 md:left-12 font-mono text-[10px] tracking-[0.3em] text-neon/70 z-10">
-        <div className="flex items-center gap-2">
-          <span className="h-1.5 w-1.5 rounded-full bg-neon animate-pulse-glow shadow-glow" />
-          REC · 01:24:07
-        </div>
-      </div>
-      <div className="absolute top-24 right-6 md:right-12 font-mono text-[10px] tracking-[0.3em] text-muted-foreground z-10 text-right">
-        LAT -29.7°<br />LON -51.1°
-      </div>
-      <div className="absolute bottom-8 left-6 md:left-12 font-mono text-[10px] tracking-[0.3em] text-muted-foreground z-10">
-        SCROLL ↓ TO DESCEND
-      </div>
-      <div className="absolute bottom-8 right-6 md:right-12 font-mono text-[10px] tracking-[0.3em] text-muted-foreground z-10 text-right">
-        FILE / W.M.S — 2026
-      </div>
 
       {/* Content */}
       <motion.div style={{ opacity }} className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
