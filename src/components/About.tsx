@@ -47,12 +47,12 @@ export function About() {
           </h2>
 
           <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-            Sou Willian Martin Stumm — gestor financeiro e consultor de investimentos. Trabalho com quem entende que dinheiro mal administrado é o silêncio antes do colapso, e quem busca clareza, método e crescimento real.
+            Sou Willian Martin Stumm — gestor financeiro social e empresarial. Trabalho com quem entende que dinheiro mal administrado é o silêncio antes do colapso, e quem busca clareza, método e crescimento real.
           </p>
 
           <div className="grid grid-cols-3 gap-px bg-border/40">
             {[
-              { v: "+8", l: "Anos no mercado" },
+              { v: "+4", l: "Anos no mercado" },
               { v: "100%", l: "Foco em resultado" },
               { v: "24/7", l: "Visão estratégica" },
             ].map((s) => (
