@@ -11,8 +11,8 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Willian Martin Stumm — Gestor Financeiro & Consultor de Investimentos" },
-      { name: "description", content: "Organize, cresça e invista melhor. Consultoria estratégica de patrimônio com método e resultado." },
+      { title: "Willian Martin Stumm — Gestor Financeiro Social e Empresarial" },
+      { name: "description", content: "Organize, cresça e invista melhor. Gestão estratégica de patrimônio com método e resultado." },
       { property: "og:title", content: "Willian Martin Stumm" },
       { property: "og:description", content: "Uma nova forma de dominar seu patrimônio." },
     ],
