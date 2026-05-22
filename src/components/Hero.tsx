@@ -46,7 +46,7 @@ export function Hero() {
           transition={{ duration: 1.5, delay: 0.6 }}
           className="font-mono text-[11px] tracking-[0.5em] text-neon/80 mb-8 uppercase"
         >
-          [ Gestor Financeiro · Consultor de Investimentos ]
+          [ Gestor Financeiro Social e Empresarial ]
         </motion.div>
 
         <motion.h1
