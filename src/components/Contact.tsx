@@ -42,16 +42,17 @@ export function Contact() {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border/40 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border/40 max-w-4xl mx-auto">
           {[
-            { l: "WhatsApp", v: "+55 51 9709-3672" },
-            { l: "Instagram", v: "@jovemdevalor_financas" },
-            { l: "YouTube", v: "@jovemdevalor" },
+            { l: "WhatsApp", v: "+55 51 9709-3672", href: "https://wa.me/5551997093672" },
+            { l: "Instagram", v: "@jovemdevalor_financas", href: "https://www.instagram.com/jovemdevalor_financas" },
+            { l: "YouTube", v: "@jovemdevalor", href: "https://www.youtube.com/@jovemdevalor" },
+            { l: "TikTok", v: "@jovemdevalor_investir", href: "https://www.tiktok.com/@jovemdevalor_investir" },
           ].map((c) => (
-            <div key={c.l} className="bg-background p-6">
+            <a key={c.l} href={c.href} target="_blank" rel="noreferrer" className="bg-background p-6 hover:bg-neon/5 transition-colors">
               <div className="font-mono text-[10px] tracking-[0.3em] text-neon mb-2 uppercase">{c.l}</div>
               <div className="text-foreground text-sm">{c.v}</div>
-            </div>
+            </a>
           ))}
         </div>
       </motion.div>
