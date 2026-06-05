@@ -3,7 +3,9 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Marquee } from "@/components/Marquee";
 import { About } from "@/components/About";
+import { Problem } from "@/components/Problem";
 import { Method } from "@/components/Method";
+import { Services } from "@/components/Services";
 import { Stats } from "@/components/Stats";
 import { Contact, Footer } from "@/components/Contact";
 
@@ -11,10 +13,10 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Willian Stumm Martin — Gestor Financeiro Social e Empresarial" },
-      { name: "description", content: "Organize, cresça e invista melhor. Gestão estratégica de patrimônio com método e resultado." },
-      { property: "og:title", content: "Willian Stumm Martin" },
-      { property: "og:description", content: "Uma nova forma de dominar seu patrimônio." },
+      { title: "Willian Stumm Martin — Gestão Financeira para Pessoas e Empresas" },
+      { name: "description", content: "Organize seu dinheiro, controle seus resultados e construa patrimônio com mais segurança e clareza." },
+      { property: "og:title", content: "Willian Stumm Martin — Gestão Financeira" },
+      { property: "og:description", content: "Gestão financeira para pessoas e empresas. Diagnóstico gratuito." },
     ],
   }),
 });
@@ -26,7 +28,9 @@ function Index() {
       <Hero />
       <Marquee />
       <About />
+      <Problem />
       <Method />
+      <Services />
       <Stats />
       <Contact />
       <Footer />

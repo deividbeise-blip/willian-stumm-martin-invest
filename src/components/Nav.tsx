@@ -1,5 +1,14 @@
 import { motion } from "framer-motion";
 
+const links = [
+  { l: "Início", h: "#início" },
+  { l: "Sobre", h: "#sobre" },
+  { l: "Método", h: "#método" },
+  { l: "Serviços", h: "#serviços" },
+  { l: "Resultados", h: "#resultados" },
+  { l: "Contato", h: "#contato" },
+];
+
 export function Nav() {
   return (
     <motion.nav
@@ -16,28 +25,27 @@ export function Nav() {
             <div className="absolute inset-2 rounded-sm bg-neon rotate-45 shadow-glow" />
           </div>
           <div className="font-mono text-xs tracking-[0.3em] text-foreground/80">
-            W<span className="text-neon">/</span>MS
+            W<span className="text-neon">/</span>SM
           </div>
         </div>
 
-        <div className="hidden md:flex items-center gap-10 font-mono text-[11px] tracking-[0.25em] uppercase text-muted-foreground">
-          {["Sobre", "Método", "Resultados", "Contato"].map((l, i) => (
-            <a key={l} href={`#${l.toLowerCase()}`} className="group relative transition-colors hover:text-foreground">
+        <div className="hidden lg:flex items-center gap-8 font-mono text-[11px] tracking-[0.25em] uppercase text-muted-foreground">
+          {links.map((l, i) => (
+            <a key={l.l} href={l.h} className="group relative transition-colors hover:text-foreground">
               <span className="text-neon/60 mr-2">0{i + 1}</span>
-              {l}
+              {l.l}
               <span className="absolute -bottom-2 left-0 h-px w-0 bg-neon transition-all duration-500 group-hover:w-full shadow-glow" />
             </a>
           ))}
         </div>
 
         <a
-          href="https://wa.me/5551997093672"
+          href="https://wa.me/5551997093672?text=Ol%C3%A1%20Willian%2C%20quero%20agendar%20meu%20Diagn%C3%B3stico%20Financeiro%20Gratuito."
           target="_blank"
           rel="noreferrer"
-          className="group relative overflow-hidden glass-strong px-5 py-2.5 font-mono text-[11px] tracking-[0.25em] uppercase hover:border-neon/60 transition-all"
+          className="group relative overflow-hidden bg-neon text-primary-foreground shadow-glow px-5 py-2.5 font-mono text-[11px] tracking-[0.25em] uppercase hover:scale-105 transition-transform"
         >
-          <span className="relative z-10">Agendar</span>
-          <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-neon/30 to-transparent group-hover:translate-x-full transition-transform duration-1000" />
+          <span className="relative z-10">📱 WhatsApp</span>
         </a>
       </div>
     </motion.nav>

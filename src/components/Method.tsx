@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { n: "01", t: "Diagnóstico", d: "Mapeamos cada fluxo, cada gasto e cada oportunidade dormindo no seu patrimônio." },
-  { n: "02", t: "Arquitetura", d: "Estruturamos uma carteira viva, alinhada ao seu perfil, objetivos e horizonte." },
-  { n: "03", t: "Execução", d: "Implementação cirúrgica com acompanhamento contínuo e ajustes em tempo real." },
-  { n: "04", t: "Escala", d: "Dinheiro trabalhando enquanto você dorme. Crescimento composto e controlado." },
+  { n: "01", t: "Diagnóstico", d: "Mapeamento completo da situação financeira atual — receitas, despesas, dívidas e oportunidades." },
+  { n: "02", t: "Organização", d: "Estruturação do fluxo de caixa e implantação de controles financeiros claros e replicáveis." },
+  { n: "03", t: "Acompanhamento", d: "Monitoramento constante dos números e suporte na tomada de decisões estratégicas." },
+  { n: "04", t: "Crescimento", d: "Estratégias para aumentar patrimônio, lucro e segurança financeira de forma sustentável." },
 ];
 
 export function Method() {
@@ -23,10 +23,10 @@ export function Method() {
         >
           <div className="font-mono text-[11px] tracking-[0.4em] text-neon uppercase flex items-center gap-3 mb-6">
             <span className="h-px w-12 bg-neon shadow-glow" />
-            02 / Protocolo
+            03 / Método
           </div>
           <h2 className="font-display text-5xl md:text-7xl font-bold leading-[0.95] gradient-text">
-            Método em<br /><span className="italic font-light">quatro</span> movimentos.
+            Gestão Financeira em<br /><span className="italic font-light">quatro</span> etapas.
           </h2>
         </motion.div>
 
@@ -45,7 +45,7 @@ export function Method() {
                 <div className="flex items-baseline justify-between mb-8">
                   <span className="font-mono text-xs tracking-[0.3em] text-neon">{s.n}</span>
                   <span className="font-mono text-[10px] tracking-[0.3em] text-muted-foreground group-hover:text-neon transition-colors">
-                    ◇ ATIVO
+                    ◇ ETAPA
                   </span>
                 </div>
                 <h3 className="font-display text-4xl md:text-5xl font-bold mb-6 group-hover:text-neon transition-colors duration-500">
