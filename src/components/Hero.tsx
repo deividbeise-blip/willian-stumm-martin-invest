@@ -12,8 +12,7 @@ export function Hero() {
   const filter = useTransform(blur, (b) => `blur(${b}px)`);
 
   return (
-    <section ref={ref} className="relative h-screen w-full overflow-hidden bg-background">
-      {/* Video */}
+    <section ref={ref} id="início" className="relative h-screen w-full overflow-hidden bg-background">
       <motion.div style={{ scale, y, filter }} className="absolute inset-0">
         <video
           autoPlay
@@ -28,7 +27,6 @@ export function Hero() {
         </video>
       </motion.div>
 
-      {/* Overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
       <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 50%, transparent 0%, oklch(0.08 0.02 250 / 0.7) 70%, var(--background) 100%)" }} />
       <div className="absolute inset-0 mix-blend-overlay" style={{ background: "linear-gradient(135deg, oklch(0.25 0.15 255 / 0.3), transparent 50%, oklch(0.35 0.2 240 / 0.25))" }} />
@@ -37,8 +35,6 @@ export function Hero() {
 
       <Particles count={50} />
 
-
-      {/* Content */}
       <motion.div style={{ opacity }} className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -46,17 +42,17 @@ export function Hero() {
           transition={{ duration: 1.5, delay: 0.6 }}
           className="font-mono text-[11px] tracking-[0.5em] text-neon/80 mb-8 uppercase"
         >
-          [ Gestor Financeiro Social e Empresarial ]
+          [ Willian Stumm Martin · Gestor Financeiro ]
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 60, letterSpacing: "0.2em" }}
-          animate={{ opacity: 1, y: 0, letterSpacing: "-0.04em" }}
+          animate={{ opacity: 1, y: 0, letterSpacing: "-0.03em" }}
           transition={{ duration: 2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="font-display text-6xl md:text-8xl lg:text-[10rem] font-bold leading-[0.9] text-balance gradient-text text-glow"
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] text-balance gradient-text text-glow max-w-5xl"
         >
-          WILLIAN<br />
-          STUMM MARTIN
+          Gestão Financeira para<br />
+          <span className="italic font-light">Pessoas e Empresas</span>
         </motion.h1>
 
         <motion.div
@@ -70,10 +66,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 1.8 }}
-          className="max-w-xl text-base md:text-lg text-muted-foreground text-balance font-light"
+          className="max-w-2xl text-base md:text-lg text-muted-foreground text-balance font-light"
         >
-          Organize. Cresça. Invista melhor. Uma nova forma de
-          <span className="text-foreground"> dominar seu patrimônio.</span>
+          Organize seu dinheiro, controle seus resultados e construa
+          <span className="text-foreground"> patrimônio com mais segurança e clareza.</span>
         </motion.p>
 
         <motion.div
@@ -83,15 +79,15 @@ export function Hero() {
           className="mt-12 flex flex-col sm:flex-row gap-4"
         >
           <a
-            href="https://wa.me/5551997093672"
+            href="https://wa.me/5551997093672?text=Ol%C3%A1%20Willian%2C%20quero%20agendar%20meu%20Diagn%C3%B3stico%20Financeiro%20Gratuito."
             target="_blank"
             rel="noreferrer"
             className="group relative overflow-hidden px-8 py-4 font-mono text-xs tracking-[0.3em] uppercase bg-neon text-primary-foreground shadow-glow hover:scale-105 transition-transform duration-500"
           >
-            <span className="relative z-10">Iniciar Consultoria →</span>
+            <span className="relative z-10">✅ Agendar Diagnóstico Gratuito →</span>
             <div className="absolute inset-0 bg-gradient-to-r from-neon via-foreground to-neon bg-[length:200%_100%] opacity-0 group-hover:opacity-100" style={{ animation: "shimmer 2s linear infinite" }} />
           </a>
-          <a href="#sobre" className="glass-strong px-8 py-4 font-mono text-xs tracking-[0.3em] uppercase hover:border-neon/60 transition-all">
+          <a href="#método" className="glass-strong px-8 py-4 font-mono text-xs tracking-[0.3em] uppercase hover:border-neon/60 transition-all">
             Conhecer o Método
           </a>
         </motion.div>
@@ -128,7 +124,6 @@ export function Hero() {
         </motion.div>
       </motion.div>
 
-      {/* Bottom fade */}
       <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-background to-transparent pointer-events-none" />
     </section>
   );

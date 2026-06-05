@@ -21,11 +21,11 @@ export function About() {
             <div className="absolute -top-px -right-px w-8 h-8 border-t-2 border-r-2 border-neon z-20" />
             <div className="absolute -bottom-px -left-px w-8 h-8 border-b-2 border-l-2 border-neon z-20" />
             <div className="absolute -bottom-px -right-px w-8 h-8 border-b-2 border-r-2 border-neon z-20" />
-            <img src={portrait} alt="Willian Stumm Martin" className="h-full w-full object-cover" style={{ filter: "grayscale(0.3) contrast(1.1) brightness(0.85)" }} />
+            <img src={portrait} alt="Willian Martin" className="h-full w-full object-cover" style={{ filter: "grayscale(0.3) contrast(1.1) brightness(0.85)" }} />
             <div className="absolute inset-0 bg-gradient-to-tr from-background/80 via-transparent to-deep/40 mix-blend-multiply" />
             <div className="absolute inset-0 scan-lines opacity-20" />
             <div className="absolute bottom-4 left-4 font-mono text-[10px] tracking-[0.3em] text-neon">
-              SUBJECT_01 / VERIFIED
+              WILLIAN MARTIN / GESTOR
             </div>
           </div>
         </motion.div>
@@ -39,22 +39,27 @@ export function About() {
         >
           <div className="font-mono text-[11px] tracking-[0.4em] text-neon uppercase flex items-center gap-3">
             <span className="h-px w-12 bg-neon shadow-glow" />
-            01 / Identidade
+            01 / Sobre
           </div>
 
           <h2 className="font-display text-5xl md:text-7xl font-bold leading-[0.95] gradient-text text-balance">
-            Quem comanda<br />o seu <span className="italic font-light">capital</span>?
+            Quem está por trás<br />da <span className="italic font-light">gestão</span>?
           </h2>
 
-          <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-            Sou Willian Stumm Martin — gestor financeiro social e empresarial. Trabalho com quem entende que dinheiro mal administrado é o silêncio antes do colapso, e quem busca clareza, método e crescimento real.
-          </p>
+          <div className="space-y-5 text-lg text-muted-foreground leading-relaxed max-w-xl">
+            <p>
+              Meu nome é <span className="text-foreground font-medium">Willian Martin</span>. Ajudo pessoas e empresas a organizar suas finanças, controlar seus números e tomar decisões mais inteligentes com o próprio dinheiro.
+            </p>
+            <p>
+              Meu trabalho vai além dos investimentos. Acompanho receitas, despesas, fluxo de caixa, metas financeiras e planejamento patrimonial para que cada cliente tenha clareza sobre sua situação e saiba exatamente qual o próximo passo.
+            </p>
+          </div>
 
           <div className="grid grid-cols-3 gap-px bg-border/40">
             {[
-              { v: "+4", l: "Anos no mercado" },
-              { v: "100%", l: "Foco em resultado" },
-              { v: "24/7", l: "Visão estratégica" },
+              { v: "PF", l: "Pessoas físicas" },
+              { v: "PJ", l: "Empresas" },
+              { v: "360°", l: "Visão patrimonial" },
             ].map((s) => (
               <div key={s.l} className="bg-background p-6 group hover:bg-card transition-colors">
                 <div className="font-display text-4xl font-bold text-neon text-glow">{s.v}</div>

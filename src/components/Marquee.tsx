@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const items = ["Estratégia", "Patrimônio", "Investimentos", "Disciplina", "Resultado", "Visão"];
+const items = ["Organização", "Controle", "Fluxo de Caixa", "Planejamento", "Patrimônio", "Crescimento"];
 
 export function Marquee() {
   return (
