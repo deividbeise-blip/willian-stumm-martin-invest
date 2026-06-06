@@ -45,7 +45,7 @@ export function Nav() {
           rel="noreferrer"
           className="group relative overflow-hidden bg-neon text-primary-foreground shadow-glow px-5 py-2.5 font-mono text-[11px] tracking-[0.25em] uppercase hover:scale-105 transition-transform"
         >
-          <span className="relative z-10">📱 WhatsApp</span>
+          <span className="relative z-10">AGENDAR</span>
         </a>
       </div>
     </motion.nav>
