@@ -52,7 +52,7 @@ export function Hero() {
           className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] text-balance gradient-text text-glow max-w-5xl"
         >
           Gestão Financeira para<br />
-          <span className="italic font-light">Pessoas e Empresas</span>
+          <span className="italic font-light inline-block pb-3">Pessoas e Empresas</span>
         </motion.h1>
 
         <motion.div

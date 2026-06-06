@@ -17,7 +17,7 @@ export function Contact() {
           06 / Próximo passo
         </div>
         <h2 className="font-display text-6xl md:text-9xl font-bold gradient-text text-glow leading-[0.9] mb-10">
-          Vamos organizar suas<br /><span className="italic font-light">finanças?</span>
+          Vamos organizar suas<br /><span className="italic font-light inline-block pb-3">finanças?</span>
         </h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
           Agende uma conversa e descubra quais são os principais pontos que podem estar limitando o seu crescimento financeiro.

@@ -43,7 +43,7 @@ export function About() {
           </div>
 
           <h2 className="font-display text-5xl md:text-7xl font-bold leading-[0.95] gradient-text text-balance">
-            Quem está por trás<br />da <span className="italic font-light">gestão</span>?
+            Quem está por trás<br />da <span className="italic font-light inline-block pb-3">gestão</span>?
           </h2>
 
           <div className="space-y-5 text-lg text-muted-foreground leading-relaxed max-w-xl">

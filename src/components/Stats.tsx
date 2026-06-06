@@ -24,7 +24,7 @@ export function Stats() {
             05 / Resultados
           </div>
           <h2 className="font-display text-5xl md:text-7xl font-bold gradient-text text-glow leading-[0.95]">
-            O que muda quando existe<br /><span className="italic font-light">gestão financeira</span>?
+            O que muda quando existe<br /><span className="italic font-light inline-block pb-3">gestão financeira</span>?
           </h2>
         </motion.div>
 

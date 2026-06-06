@@ -29,7 +29,7 @@ export function Problem() {
             02 / Diagnóstico
           </div>
           <h2 className="font-display text-5xl md:text-7xl font-bold leading-[0.95] gradient-text text-balance">
-            O dinheiro entra.<br />Mas <span className="italic font-light">para onde</span> ele vai?
+            O dinheiro entra.<br />Mas <span className="italic font-light inline-block pb-3">para onde</span> ele vai?
           </h2>
           <p className="mt-8 text-muted-foreground text-lg max-w-md">
             Muitos empresários e pessoas enfrentam diariamente situações que travam o crescimento financeiro:

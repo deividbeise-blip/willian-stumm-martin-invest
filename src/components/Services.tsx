@@ -52,7 +52,7 @@ export function Services() {
             04 / Serviços
           </div>
           <h2 className="font-display text-5xl md:text-7xl font-bold leading-[0.95] gradient-text">
-            Áreas de <span className="italic font-light">atuação.</span>
+            Áreas de <span className="italic font-light inline-block pb-3">atuação.</span>
           </h2>
         </motion.div>
 
