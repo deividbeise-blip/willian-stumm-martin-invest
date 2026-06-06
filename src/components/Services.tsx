@@ -52,7 +52,7 @@ export function Services() {
             04 / Serviços
           </div>
           <h2 className="font-display text-5xl md:text-7xl font-bold leading-[0.95] gradient-text">
-            Áreas de <span className="italic font-light">atuação.</span>
+            Áreas de <span className="italic font-light inline-block pb-3">atuação.</span>
           </h2>
         </motion.div>
 
@@ -80,7 +80,7 @@ export function Services() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/5551997093672"
+                href="https://wa.me/5551997093672?text=quero%20organizar%20minha%20vida%20financeira"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 font-mono text-[10px] tracking-[0.3em] uppercase text-neon hover:text-foreground transition-colors flex items-center gap-2"

@@ -26,7 +26,7 @@ export function Method() {
             03 / Método
           </div>
           <h2 className="font-display text-5xl md:text-7xl font-bold leading-[0.95] gradient-text">
-            Gestão Financeira em<br /><span className="italic font-light">quatro</span> etapas.
+            Gestão Financeira em<br /><span className="italic font-light inline-block pb-3">quatro</span> etapas.
           </h2>
         </motion.div>
 
