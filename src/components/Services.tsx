@@ -80,7 +80,7 @@ export function Services() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/5551997093672"
+                href="https://wa.me/5551997093672?text=quero%20organizar%20minha%20vida%20financeira"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 font-mono text-[10px] tracking-[0.3em] uppercase text-neon hover:text-foreground transition-colors flex items-center gap-2"

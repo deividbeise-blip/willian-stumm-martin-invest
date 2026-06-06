@@ -25,7 +25,7 @@ export function Contact() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <a
-            href="https://wa.me/5551997093672?text=Ol%C3%A1%20Willian%2C%20quero%20agendar%20meu%20Diagn%C3%B3stico%20Financeiro%20Gratuito."
+            href="https://wa.me/5551997093672?text=quero%20organizar%20minha%20vida%20financeira"
             target="_blank"
             rel="noreferrer"
             className="group relative overflow-hidden px-10 py-5 font-mono text-xs tracking-[0.3em] uppercase bg-neon text-primary-foreground shadow-glow hover:scale-105 transition-transform duration-500"
@@ -44,7 +44,7 @@ export function Contact() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-border/40 max-w-4xl mx-auto">
           {[
-            { l: "WhatsApp", v: "+55 51 9709-3672", href: "https://wa.me/5551997093672" },
+            { l: "WhatsApp", v: "+55 51 9709-3672", href: "https://wa.me/5551997093672?text=quero%20organizar%20minha%20vida%20financeira" },
             { l: "Instagram", v: "@jovemdevalor_financas", href: "https://www.instagram.com/jovemdevalor_financas" },
             { l: "YouTube", v: "@jovemdevalor", href: "https://www.youtube.com/@jovemdevalor" },
             { l: "TikTok", v: "@jovemdevalor_investir", href: "https://www.tiktok.com/@jovemdevalor_investir" },
