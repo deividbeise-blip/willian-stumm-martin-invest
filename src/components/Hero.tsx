@@ -1,11 +1,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Particles } from "./Particles";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], [0, 120]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, isMobile ? 40 : 120]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
