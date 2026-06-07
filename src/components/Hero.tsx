@@ -30,7 +30,7 @@ export function Hero() {
       <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 50%, transparent 0%, oklch(0.08 0.02 250 / 0.7) 70%, var(--background) 100%)" }} />
       <div className="absolute inset-0 scan-lines opacity-30 pointer-events-none" />
 
-      <Particles count={24} />
+      {!isMobile && <Particles count={24} />}
 
       <motion.div style={{ opacity }} className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
         <motion.div
