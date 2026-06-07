@@ -25,7 +25,7 @@ export function Contact() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <a
-            href="https://wa.me/5551997093672?text=quero%20organizar%20minha%20vida%20financeira"
+            href="https://wa.me/5551997093672?text=Quero%20organizar%20minha%20vida%20financeira%20Willian"
             target="_blank"
             rel="noreferrer"
             className="group relative overflow-hidden px-10 py-5 font-mono text-xs tracking-[0.3em] uppercase bg-neon text-primary-foreground shadow-glow hover:scale-105 transition-transform duration-500"
