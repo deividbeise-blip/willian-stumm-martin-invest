@@ -79,7 +79,7 @@ export function Hero() {
           className="mt-12 flex flex-col sm:flex-row gap-4"
         >
           <a
-            href="https://wa.me/5551997093672?text=quero%20organizar%20minha%20vida%20financeira"
+            href="https://wa.me/5551997093672?text=Quero%20organizar%20minha%20vida%20financeira%20Willian"
             target="_blank"
             rel="noreferrer"
             className="group relative overflow-hidden px-8 py-4 font-mono text-xs tracking-[0.3em] uppercase bg-neon text-primary-foreground shadow-glow hover:scale-105 transition-transform duration-500"
