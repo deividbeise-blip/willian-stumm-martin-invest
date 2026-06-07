@@ -41,10 +41,10 @@ export function Hero() {
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 60, letterSpacing: "0.2em" }}
-          animate={{ opacity: 1, y: 0, letterSpacing: "-0.03em" }}
-          transition={{ duration: 2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] text-balance gradient-text text-glow max-w-5xl"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] text-balance gradient-text text-glow max-w-5xl tracking-tight"
         >
           Gestão Financeira para<br />
           <span className="italic font-light inline-block pb-3">Pessoas e Empresas</span>
