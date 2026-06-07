@@ -40,7 +40,7 @@ export function Nav() {
         </div>
 
         <a
-          href="https://wa.me/5551997093672?text=quero%20organizar%20minha%20vida%20financeira"
+          href="https://wa.me/5551997093672?text=Quero%20organizar%20minha%20vida%20financeira%20Willian"
           target="_blank"
           rel="noreferrer"
           className="group relative overflow-hidden bg-neon text-primary-foreground shadow-glow px-5 py-2.5 font-mono text-[11px] tracking-[0.25em] uppercase hover:scale-105 transition-transform"
