@@ -1,11 +1,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Particles } from "./Particles";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], [0, 120]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, isMobile ? 40 : 120]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
@@ -28,7 +30,7 @@ export function Hero() {
       <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 50%, transparent 0%, oklch(0.08 0.02 250 / 0.7) 70%, var(--background) 100%)" }} />
       <div className="absolute inset-0 scan-lines opacity-30 pointer-events-none" />
 
-      <Particles count={24} />
+      {!isMobile && <Particles count={24} />}
 
       <motion.div style={{ opacity }} className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
         <motion.div

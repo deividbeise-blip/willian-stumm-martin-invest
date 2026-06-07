@@ -123,3 +123,23 @@
 .animate-float-up { animation: float-up linear infinite; }
 .animate-pulse-glow { animation: pulse-glow 4s ease-in-out infinite; }
 .animate-scan { animation: scan 8s linear infinite; }
+
+/* Mobile performance: lighten heavy GPU effects */
+@media (max-width: 768px) {
+  .glass {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .glass-strong {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .scan-lines { display: none; }
+  .bg-noise { display: none; }
+  .text-glow { text-shadow: none; }
+  .shadow-glow { box-shadow: 0 0 20px oklch(0.55 0.22 240 / 0.25); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float-up, .animate-pulse-glow, .animate-scan { animation: none; }
+}
