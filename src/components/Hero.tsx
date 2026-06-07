@@ -5,15 +5,12 @@ import { Particles } from "./Particles";
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 120]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
-  const blur = useTransform(scrollYProgress, [0, 1], [0, 8]);
-  const filter = useTransform(blur, (b) => `blur(${b}px)`);
 
   return (
     <section ref={ref} id="início" className="relative h-screen w-full overflow-hidden bg-background">
-      <motion.div style={{ scale, y, filter }} className="absolute inset-0">
+      <motion.div style={{ y, willChange: "transform" }} className="absolute inset-0">
         <video
           autoPlay
           muted
@@ -21,7 +18,7 @@ export function Hero() {
           playsInline
           preload="auto"
           className="h-full w-full object-cover"
-          style={{ filter: "brightness(0.5) contrast(1.15) saturate(0.85) hue-rotate(200deg)" }}
+          style={{ filter: "brightness(0.5) saturate(0.85)" }}
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
@@ -29,11 +26,9 @@ export function Hero() {
 
       <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/40 to-background" />
       <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 50%, transparent 0%, oklch(0.08 0.02 250 / 0.7) 70%, var(--background) 100%)" }} />
-      <div className="absolute inset-0 mix-blend-overlay" style={{ background: "linear-gradient(135deg, oklch(0.25 0.15 255 / 0.3), transparent 50%, oklch(0.35 0.2 240 / 0.25))" }} />
-      <div className="absolute inset-0 bg-noise opacity-[0.08] mix-blend-overlay" />
       <div className="absolute inset-0 scan-lines opacity-30 pointer-events-none" />
 
-      <Particles count={50} />
+      <Particles count={24} />
 
       <motion.div style={{ opacity }} className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
         <motion.div
@@ -46,10 +41,10 @@ export function Hero() {
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 60, letterSpacing: "0.2em" }}
-          animate={{ opacity: 1, y: 0, letterSpacing: "-0.03em" }}
-          transition={{ duration: 2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] text-balance gradient-text text-glow max-w-5xl"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] text-balance gradient-text text-glow max-w-5xl tracking-tight"
         >
           Gestão Financeira para<br />
           <span className="italic font-light inline-block pb-3">Pessoas e Empresas</span>

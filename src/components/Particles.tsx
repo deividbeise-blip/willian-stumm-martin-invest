@@ -27,7 +27,7 @@ export function Particles({ count = 40 }: { count?: number }) {
             opacity: p.opacity,
             animationDelay: `-${p.delay}s`,
             animationDuration: `${p.duration}s`,
-            boxShadow: `0 0 ${p.size * 4}px var(--neon)`,
+            willChange: "transform",
           }}
         />
       ))}
