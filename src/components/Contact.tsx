@@ -46,7 +46,7 @@ export function Contact() {
           {[
             { l: "WhatsApp", v: "+55 51 9709-3672", href: "https://wa.me/5551997093672?text=Quero%20organizar%20minha%20vida%20financeira%20Willian" },
             { l: "Instagram", v: "@jovemdevalor_financas", href: "https://www.instagram.com/jovemdevalor_financas" },
-            { l: "YouTube", v: "@jovemdevalor", href: "https://www.youtube.com/@jovemdevalor" },
+            { l: "YouTube", v: "@JovemdeValor-WillianMartin", href: "https://www.youtube.com/@JovemdeValor-WillianMartin" },
             { l: "TikTok", v: "@jovemdevalor_investir", href: "https://www.tiktok.com/@jovemdevalor_investir" },
           ].map((c) => (
             <a key={c.l} href={c.href} target="_blank" rel="noreferrer" className="bg-background p-6 hover:bg-neon/5 transition-colors">
