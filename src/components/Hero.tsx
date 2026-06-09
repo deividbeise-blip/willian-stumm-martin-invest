@@ -81,7 +81,7 @@ export function Hero() {
             rel="noreferrer"
             className="group relative overflow-hidden px-8 py-4 font-mono text-xs tracking-[0.3em] uppercase bg-neon text-primary-foreground shadow-glow hover:scale-105 transition-transform duration-500"
           >
-            <span className="relative z-10">✅ Agendar Diagnóstico Gratuito →</span>
+            <span className="relative z-10"> Agendar Diagnóstico Gratuito →</span>
             <div className="absolute inset-0 bg-gradient-to-r from-neon via-foreground to-neon bg-[length:200%_100%] opacity-0 group-hover:opacity-100" style={{ animation: "shimmer 2s linear infinite" }} />
           </a>
           <a href="#método" className="glass-strong px-8 py-4 font-mono text-xs tracking-[0.3em] uppercase hover:border-neon/60 transition-all">

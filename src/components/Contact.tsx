@@ -30,7 +30,7 @@ export function Contact() {
             rel="noreferrer"
             className="group relative overflow-hidden px-10 py-5 font-mono text-xs tracking-[0.3em] uppercase bg-neon text-primary-foreground shadow-glow hover:scale-105 transition-transform duration-500"
           >
-            <span className="relative z-10">🚀 Agendar Diagnóstico Gratuito →</span>
+            <span className="relative z-10"> Agendar Diagnóstico Gratuito →</span>
           </a>
           <a
             href="https://www.instagram.com/jovemdevalor_financas"
