@@ -2,6 +2,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Particles } from "./Particles";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { captureEvent } from "@/lib/posthog";
+import { posthogLogs } from "@/lib/posthog-logs";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -79,6 +81,10 @@ export function Hero() {
             href="https://wa.me/5551997093672?text=Quero%20organizar%20minha%20vida%20financeira%20Willian"
             target="_blank"
             rel="noreferrer"
+            onClick={() => {
+              captureEvent("consultation_cta_clicked", { source: "hero" });
+              posthogLogs.info("consultation CTA opened", { cta_location: "hero" });
+            }}
             className="group relative overflow-hidden px-8 py-4 font-mono text-xs tracking-[0.3em] uppercase bg-neon text-primary-foreground shadow-glow hover:scale-105 transition-transform duration-500"
           >
             <span className="relative z-10"> Agendar Diagnóstico Gratuito →</span>
@@ -115,6 +121,14 @@ export function Hero() {
               target="_blank"
               rel="noreferrer"
               aria-label={s.label}
+              onClick={() => {
+                if (s.label === "WhatsApp") {
+                  captureEvent("consultation_cta_clicked", { source: "hero_social" });
+                  return;
+                }
+
+                captureEvent("social_profile_opened", { platform: s.label.toLowerCase(), source: "hero" });
+              }}
               className="group relative h-11 w-11 grid place-items-center glass-strong hover:border-neon/60 hover:text-neon transition-all duration-500 hover:shadow-glow"
             >
               {s.icon}
