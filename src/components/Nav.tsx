@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { captureEvent } from "@/lib/posthog";
+import { posthogLogs } from "@/lib/posthog-logs";
 
 const links = [
   { l: "Início", h: "#início" },
@@ -43,6 +45,10 @@ export function Nav() {
           href="https://wa.me/5551997093672?text=Quero%20organizar%20minha%20vida%20financeira%20Willian"
           target="_blank"
           rel="noreferrer"
+          onClick={() => {
+            captureEvent("consultation_cta_clicked", { source: "navigation" });
+            posthogLogs.info("consultation CTA opened", { cta_location: "navigation" });
+          }}
           className="group relative overflow-hidden bg-neon text-primary-foreground shadow-glow px-5 py-2.5 font-mono text-[11px] tracking-[0.25em] uppercase hover:scale-105 transition-transform"
         >
           <span className="relative z-10">AGENDAR</span>

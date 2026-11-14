@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { captureEvent } from "@/lib/posthog";
 
 const services = [
   {
@@ -83,6 +84,7 @@ export function Services() {
                 href="https://wa.me/5551997093672?text=Quero%20organizar%20minha%20vida%20financeira%20Willian"
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => captureEvent("consultation_cta_clicked", { source: "services", service: s.n })}
                 className="mt-8 font-mono text-[10px] tracking-[0.3em] uppercase text-neon hover:text-foreground transition-colors flex items-center gap-2"
               >
                 Solicitar →
